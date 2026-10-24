@@ -1,0 +1,962 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46/"
+     xml:base="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-46="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#addressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#addressedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#addressesRisk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#addressesRisk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#addressesRisk">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#considersConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#considersConstraint">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#constrainsPhase"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#constrainsPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#constrainsPhase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#decisionPointOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#decisionPointOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#hasDecisionPoint"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#followsPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#followsPhase">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#precedesPhase"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#hasDecisionPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#hasDecisionPoint">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#integratesWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#integratesWith">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#isIntegratedWith"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#involvesRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#involvesRole">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#participatesIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#isIntegratedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#isIntegratedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#isProducedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#producesArtifact"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#isUsedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#usesArtifact"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#iterationFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#iterationFrom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#mayIterateTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#mayIterateTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#mayIterateTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#performedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#performedIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#performsValidation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#performsValidation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#performsValidation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#precedesPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#precedesPhase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#producesArtifact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#producesArtifact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#usesArtifact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#usesArtifact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#validatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#validatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#validatesComponent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SystemComponent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#validatesComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#validatesComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SystemComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SystemComponent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#involvesRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#producesArtifact"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#usesArtifact"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#addressesRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#considersConstraint"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#mayIterateTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#precedesPhase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#hasDecisionPoint"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SystemComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#integratesWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalComponent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SystemComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SystemComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#validatesComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SystemComponent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#BackendAvailability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#BackendAvailability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSoftwareEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSoftwareEngineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSystem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSystemIntegration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSystemIntegration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#precedesPhase"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSoftwareEngineer"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SoftwareArchitect"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HybridClassicalQuantumModule"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DeployedQuantumSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#CodeImplementation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#CodeImplementation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ImplementationErrorRisk"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationValidation"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitCode"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DeployedQuantumSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DeployedQuantumSystem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Deployment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Deployment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#producesArtifact"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSoftwareEngineer"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QualityAssuranceValidationEngineer"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SoftwareArchitect"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareOptimization"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemAnalysis"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSystemIntegration"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DeployedQuantumSystem"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedQuantumCircuit"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ResultsAnalysisReport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ErrorAnalysisCorrection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ErrorAnalysisCorrection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#hasDecisionPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareNoiseRisk"/>
+        <untitled-ontology-46:hasDecisionPoint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ErrorAnalysisDecision"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QualityAssuranceValidationEngineer"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareSpecialist"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#CodeImplementation"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesign"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitConstruction"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareExecution"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Deployment"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ResultsAnalysisReport"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentalResults"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#TechnicalRiskRegister"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ErrorAnalysisDecision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ErrorAnalysisDecision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExecutionCost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExecutionCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExecutionLimit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExecutionLimit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentalResults -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentalResults">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentationPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentationPlan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareLimitationRisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareLimitationRisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareNoiseRisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareNoiseRisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareOptimization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareOptimization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#considersConstraint"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareLimitationRisk"/>
+        <untitled-ontology-46:considersConstraint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LimitedQubitAvailability"/>
+        <untitled-ontology-46:considersConstraint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QubitConnectivity"/>
+        <untitled-ontology-46:considersConstraint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SupportedGateSet"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareSpecialist"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulation"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedQuantumCircuit"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#TechnicalRiskRegister"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationReport"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HybridClassicalQuantumModule -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HybridClassicalQuantumModule">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ImplementationErrorRisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ImplementationErrorRisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialRiskRegister -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialRiskRegister">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess"/>
+        <untitled-ontology-46:validatesComponent rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationDecision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationDecision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationValidation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationValidation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#hasDecisionPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:hasDecisionPoint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationDecision"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QualityAssuranceValidationEngineer"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#CodeImplementation"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesign"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitConstruction"/>
+        <untitled-ontology-46:performsValidation rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulation"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareOptimization"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialSimulationReport"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumTestCases"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentationPlan"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LimitedQubitAvailability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LimitedQubitAvailability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedQuantumCircuit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedQuantumCircuit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#hasDecisionPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:hasDecisionPoint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationDecision"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QualityAssuranceValidationEngineer"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer"/>
+        <untitled-ontology-46:mayIterateTo rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareOptimization"/>
+        <untitled-ontology-46:performsValidation rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationValidation"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareExecution"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationReport"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedQuantumCircuit"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#TechnicalRiskRegister"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationDecision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationDecision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationValidation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationValidation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess"/>
+        <untitled-ontology-46:validatesComponent rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemAnalysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemAnalysis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#followsPhase"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareLimitationRisk"/>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemComplexityRisk"/>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmAvailabilityRisk"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesigner"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SoftwareArchitect"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesign"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialRiskRegister"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemAnalysisDocument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemAnalysisDocument -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemAnalysisDocument">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemComplexityRisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemComplexityRisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QualityAssuranceValidationEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QualityAssuranceValidationEngineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmAvailabilityRisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmAvailabilityRisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemComplexityRisk"/>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmAvailabilityRisk"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesigner"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitConstruction"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentationPlan"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmSpecification"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#InitialRiskRegister"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ProblemAnalysisDocument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesigner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesigner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitCode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitCode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitConstruction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitConstruction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmDesigner"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#CodeImplementation"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitModel"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentationPlan"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumAlgorithmSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumCircuitModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareExecution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareExecution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#addressesRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-46:addressesRisk rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareNoiseRisk"/>
+        <untitled-ontology-46:considersConstraint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#BackendAvailability"/>
+        <untitled-ontology-46:considersConstraint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExecutionCost"/>
+        <untitled-ontology-46:considersConstraint rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExecutionLimit"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareSpecialist"/>
+        <untitled-ontology-46:involvesRole rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer"/>
+        <untitled-ontology-46:precedesPhase rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ErrorAnalysisCorrection"/>
+        <untitled-ontology-46:producesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ExperimentalResults"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedQuantumCircuit"/>
+        <untitled-ontology-46:usesArtifact rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#OptimizedSimulationReport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareSpecialist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumHardwareSpecialist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumModule -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumModule">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumComponent"/>
+        <untitled-ontology-46:integratesWith rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ClassicalSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumSoftwareEngineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumTestCases -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QuantumTestCases">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QubitConnectivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#QubitConnectivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ResultsAnalysisReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ResultsAnalysisReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SoftwareArchitect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SoftwareArchitect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SupportedGateSet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SupportedGateSet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#TechnicalRiskRegister -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#TechnicalRiskRegister">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Artifact"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#DecisionPoint"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#HardwareConstraint"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#LifecyclePhase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Risk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#Role"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#SystemComponent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/oscarlopecamp/ontologies/2026/7/untitled-ontology-46#ValidationProcess"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
